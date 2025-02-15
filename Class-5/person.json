@@ -1,0 +1,12 @@
+{
+  "name": "Neeraj",
+  "age": 26,
+  "isStudent": false,
+  "address": {
+    "street": "Bengaluru",
+    "city": "Bengaluru",
+    "country": "IN"
+  },
+  "hobbies": ["traveling", "bide rides", "playing games"],
+  "hasPets": null
+}
