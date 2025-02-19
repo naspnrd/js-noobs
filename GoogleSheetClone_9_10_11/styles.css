@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+}
+
+/* .body {
+    background-color: black;
+} */
+
+.container{
+    display: grid;
+    grid-template-columns: 40px auto;
+    grid-template-rows: 30px auto;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: scroll;
+    /* margin: 50px auto; */
+    border: 1px solid #c0c0c0;
+    /* as we have gieven width as 100 vw and border too, so we are making box-size as border
+    box so that it will strickly stick to entire available width
+    */
+    box-sizing: border-box;
+}
+
+.head-row {
+    /* grid-column: 1/3; */
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
+
+.head-row .col-head {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid #c0c0c0;
+}
+
+.serialNo {
+    position: sticky;
+    left: 0;
+    background-color: #fff;
+
+}
+
+.serialNo .sno-cell {
+    height: 30px;
+    border: 1px solid #c0c0c0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.plate {
+    background-color: gray;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 2
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    border: 1px solid #c0c0c0;
+    width: 150px;
+    height: 30px;
+    overflow: hidden;
+    overflow-y: scroll;
+    font-family: normal;
+    font-style: normal;
+}
+
+.cell:focus {
+    border-color: blue;
+}
