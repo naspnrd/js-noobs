@@ -36,6 +36,11 @@ const rows = 500,
       colCell.contentEditable = true;
       colCell.classList.add("cell");
       rowCells.appendChild(colCell);
+      colCell.setAttribute("id", `${String.fromCharCode(64 + col)}${row}`);
+      // not the best way
+      // colCell.addEventListener("focus", (event) => {
+      //   console.log("focused");
+      // });
     }
     body.appendChild(rowCells);
   }
